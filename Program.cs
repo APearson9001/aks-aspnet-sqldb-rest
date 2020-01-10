@@ -19,7 +19,7 @@ namespace ClaimsApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                // .UseApplicationInsights()
+                .UseApplicationInsights()
                 .UseStartup<Startup>();
     }
 }
