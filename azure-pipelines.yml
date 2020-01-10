@@ -36,12 +36,12 @@ pool:
 ####
 
 variables:
-    acrSvcConnection: <ACR Service Connection>
-    azureSubscriptionEndpoint: <Specify Azure RM Connection>
-    azureContainerRegistry: <Azure Container Registry name - name.azurecr.io>
-    azureResourceGroup: <Azure Resource Group - name>
-    kubernetesCluster: <Azure Kubernetes Service - name>
-    sqlDbConnectionString: <Azure SQL DB Connection String>
+    acrSvcConnection: acrSvcConnection
+    azureSubscriptionEndpoint: Infra-Opscore-AKSWorkshop (6dae927c-48da-4889-9a26-c82d6d304a9f)
+    azureContainerRegistry: acrandypearson.azurecr.io
+    azureResourceGroup: rgAndy_Pearson
+    kubernetesCluster: akscluster
+    sqlDbConnectionString: Server=tcp:adpsqldb.database.windows.net;Initial Catalog=ClaimsDB;Persist Security Info=False;User ID=andy;Password=Mypassword!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 
 steps:
 - task: FileTransform@1
